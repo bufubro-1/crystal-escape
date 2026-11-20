@@ -4,9 +4,9 @@
 
 Run `npm ci`, `npx playwright install chromium`, `npm test`, `npm run bot`, and `npm run evaluate`. The measured environment was CachyOS Linux (x86-64), Node.js 26.13.0, npm 12.2.2, Playwright Test 1.64.1, and Chromium 156.0.8078.4 (Playwright revision 1248).
 
-The suite reports 43 Node cases and 13 Chromium cases. Of the 43 Node cases, 28 cover game rules, five cover the bot and telemetry, and ten cover detector behavior. The six winning browser routes cover Quarry, Crossing, Grotto, Ridge, Spring, and Vault. Both full suite runs passed. The second ran from a clean public clone of implementation commit `e8a2fea78ea316e990f3515165fd4e6c01b2b87f`.
+The suite reports 43 Node cases and 13 Chromium cases. Of the 43 Node cases, 28 cover game rules, five cover the bot and telemetry, and ten cover detector behavior. The six winning browser routes cover Quarry, Crossing, Grotto, Ridge, Spring, and Vault. Full suite runs passed in the working checkout and in clean public clones of implementation commit `e8a2fea78ea316e990f3515165fd4e6c01b2b87f` and report commit `5dabfc1f96376975097f65365248dfef25256ab2`. The report PDF was byte-identical to the file in the clean clone.
 
-The clean workflow took 28 seconds on the measured connection, including a shallow public clone, `npm ci` with a fresh npm cache, the Chromium installer with an empty browser cache, starting the game and verifying its HTTP response, all tests, bot generation, and evaluation. Chromium used Playwright's Ubuntu 24.04 x64 fallback build on CachyOS. The two runs produced byte-identical event, summary, and score files.
+The clean workflow took 28 seconds on each measured run, including a shallow public clone, `npm ci` with a fresh npm cache, the Chromium installer with an empty browser cache, starting the game and verifying its HTTP response, all tests, bot generation, and evaluation. Chromium used Playwright's Ubuntu 24.04 x64 fallback build on CachyOS. Both clean runs produced byte-identical event, summary, and score files.
 
 To repeat the cold-cache measurement, set `npm_config_cache` and `PLAYWRIGHT_BROWSERS_PATH` to separate empty directories before cloning. Start the timer before `git clone --depth 1`. Run the README commands, verify the server response at `http://127.0.0.1:4173`, stop the server, and stop the timer after evaluation exits.
 

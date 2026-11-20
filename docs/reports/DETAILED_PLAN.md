@@ -6,9 +6,10 @@ This is the execution checklist for the [project plan](PROJECT_PLAN.md). Complet
 
 - [x] Confirm this plan and the project plan against the course brief and lecture announcements. Use the Learn report template if published.
 - [x] Place the planning documents in the public `bufubro-1/crystal-escape` repository on `main`, then add an English README with the project's purpose, setup, and commands as those commands become available.
-- [ ] Write and submit the one-paragraph testing plan by 30 October. It must state the game scope, unit and browser test levels, tools, and anomaly evaluation approach.
+- [x] Write the [one-paragraph testing plan](TESTING_PLAN.md) covering the game scope, unit and browser test levels, tools, and anomaly evaluation approach.
+- [ ] Verify the testing plan was submitted through Learn by 30 October 2026.
 
-The course brief and Week 6 and Week 9 announcements were reviewed. Week 9 explicitly canceled the Lab 3 project check and confirmed the final deadline and Learn form. The [testing paragraph](TESTING_PLAN.md) is ready. Submission by 30 October has no available receipt. The project owner confirmed that no final-report template file was available and will handle the Learn submissions.
+The course brief and Week 6 and Week 9 announcements were reviewed. Week 9 explicitly canceled the Lab 3 project check and confirmed the final deadline and Learn form. Submission by 30 October has no available receipt. The project owner confirmed that no final-report template file was available and will handle the Learn submissions.
 
 **Done when:** The repository contains the agreed planning documents and the plan paragraph is ready for the Learn submission. Use the official report template if it becomes available.
 
@@ -62,7 +63,8 @@ See the [requirements-to-tests matrix](TEST_MATRIX.md) and [measured results](EV
 - [x] Record test count, commands, versions, seeds, map coverage, and any failures. Keep compact result tables or figures that can be placed in the report. Do not claim a game defect unless it was observed in the actual game.
 - [x] Complete an English README that gets a fresh reader from installation to running the game, all tests, and detector evaluation in under five minutes. Time the documented workflow from a clean checkout.
 - [x] Prepare an English 8–12 page PDF. Use the exact Learn report template if published. Trace game requirements to test techniques and cases. Explain the detector and comparison method, the reason for the calibration percentile, measured results, false alarms, misses, and limitations. Include an AI usage statement and be prepared to explain the code, tests, and evaluation if the instructor requests a walkthrough.
-- [ ] Verify the README commands and reported results against the final commit pushed to the public repository. The instructor grades the last commit before the deadline. Submit the repository link and PDF by 11 December 2026 at 23:59 (Europe/Istanbul) through the form shared on Learn.
+- [x] Verify the README commands and reported results against the version published on `main`. See the [clean-checkout evidence](EVALUATION.md#reproduction). The instructor grades the last commit before the deadline.
+- [ ] Submit the [public repository URL](https://github.com/bufubro-1/crystal-escape) and the [English report PDF](Crystal_Escape_Report.pdf) through the form shared on Learn by 11 December 2026 at 23:59 (Europe/Istanbul).
 
 The [nine-page English report](Crystal_Escape_Report.pdf) uses a project layout because no Learn template file was available. The project owner handles the Learn submission.
 
