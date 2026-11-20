@@ -1,0 +1,20 @@
+{
+  "name": "crystal-escape",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start": "node scripts/serve.js",
+    "test": "npm run test:unit && npm run test:browser",
+    "test:unit": "node --test --test-isolation=none tests/unit/*.test.js",
+    "test:browser": "playwright test",
+    "bot": "node scripts/telemetry.js",
+    "evaluate": "node scripts/evaluate.js"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1"
+  }
+}

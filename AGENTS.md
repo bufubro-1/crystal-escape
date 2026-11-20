@@ -21,7 +21,7 @@ Crystal Escape is the application under test for CMPE 411 topic 14: a small brow
 
 ## Language and boundaries
 
-- Write project plans, README, test descriptions, evidence summaries, and report text in English. Conversation with the project owner may be in Turkish.
+- Use English for all project-authored content, including documentation, UI text, code identifiers and comments, test descriptions, evidence summaries, and reports. Use Turkish when chatting with the project owner.
 - Do not start game implementation as part of the documentation setup. Begin implementation from the detailed plan after these planning documents are reviewed.
 - Do not add unrelated features, paid services, or a backend unless the project owner changes the plan.
 - Keep generated logs, screenshots, and reports clearly distinguished from source files; preserve the commands and seeds needed to reproduce measured results.

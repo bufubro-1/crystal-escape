@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crystal Escape</title>
+  <link rel="stylesheet" href="/style.css">
+  <script type="module" src="/src/ui.js"></script>
+</head>
+<body>
+  <main class="game">
+    <header>
+      <h1>Crystal Escape</h1>
+      <p>Collect all three crystals and reach the exit before your turns or health run out.</p>
+    </header>
+    <section class="mission" aria-label="Game">
+      <div class="board-panel">
+        <p class="position"><output id="position" aria-label="Position"></output></p>
+        <ol id="board" class="board" role="list" aria-label="Game board"></ol>
+        <ul class="legend" aria-label="Tile legend">
+          <li><span class="player" aria-hidden="true"></span>Player</li>
+          <li><span class="crystal" aria-hidden="true"></span>Crystal</li>
+          <li><span class="wall" aria-hidden="true"></span>Wall</li>
+          <li><span class="hazard" aria-hidden="true"></span>Hazard</li>
+          <li><span class="exit" aria-hidden="true"></span>Exit</li>
+        </ul>
+      </div>
+      <aside class="controls" aria-label="Session">
+        <div class="map-control">
+          <label for="map">Map</label>
+          <select id="map"></select>
+        </div>
+        <dl class="counters">
+          <div><dt>Score</dt><dd><output id="score" aria-label="Score"></output></dd></div>
+          <div><dt>Health</dt><dd><output id="health" aria-label="Health"></output></dd></div>
+          <div><dt>Turns remaining</dt><dd><output id="turns" aria-label="Turns remaining"></output></dd></div>
+          <div><dt>Crystals remaining</dt><dd><output id="crystals" aria-label="Crystals remaining"></output></dd></div>
+        </dl>
+        <p id="status" role="status" aria-label="Game status"></p>
+        <button id="restart" type="button">Restart</button>
+        <p class="instructions">Move with the arrow keys or <kbd>W</kbd> <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd>.</p>
+      </aside>
+    </section>
+  </main>
+</body>
+</html>

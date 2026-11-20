@@ -11,7 +11,7 @@ The game is a means to test and evaluate an AI-assisted test suite. The implemen
 - **Game:** An 8 × 8 grid. The player collects three crystals and reaches the exit while avoiding walls and hazards under a turn limit. Each move has explicit, testable effects on position, score, health, and game state. A small set of fixed, solvable maps supports repeatable sessions.
 - **Test levels:** Unit tests for pure game rules, bot and telemetry logic; browser end-to-end tests for visible controls, state, and outcomes. The final suite will contain at least 20 independent automated tests and run with `npm test`.
 - **Test design:** Equivalence partitioning and boundary value analysis will cover movement, collection, health, and turn limits. State transition testing will cover start, active play, win, and loss. A requirements-to-tests matrix will make the techniques visible.
-- **AI element:** A bot generates normal play traces. A lightweight unsupervised k-nearest-neighbor anomaly detector scores per-session telemetry. Its threshold will be calibrated on normal sessions and evaluated on separate normal and deliberately altered traces. Report both false alarms and missed anomalies; do not present injected faults as naturally discovered bugs.
+- **AI element:** A bot generates normal play traces. A lightweight unsupervised k-nearest-neighbor anomaly detector scores per-session telemetry. Compare it with a baseline that scores the largest standardized feature deviation. Calibrate both methods on normal sessions and evaluate them on the same held-out normal and deliberately altered traces. Report false alarms and missed anomalies and label all injected faults as synthetic.
 
 ## Technologies
 
@@ -31,10 +31,9 @@ Pin dependencies in a lockfile. Document setup, the single test command, and rep
 | Due date (Europe/Istanbul) | Deliverable | Evidence of completion |
 | --- | --- | --- |
 | 30 October 2026, 23:59 | One-paragraph testing plan submitted on Learn | Scope, tools, and test levels stated in one paragraph. |
-| 20 November 2026, Lab 3 | Running game and test suite | At least 10 automated tests demonstrated in the lab. |
-| 11 December 2026, 23:59 | Final repository link and report PDF | At least 20 one-command tests, two levels, two design techniques, AI evaluation, README, and 8–12 page report in the Learn template. |
+| 11 December 2026, 23:59 | Final repository link and report PDF submitted through the form shared on Learn | At least 20 one-command tests, two levels, two design techniques, AI evaluation, a README verified against the five-minute setup and run target, and an 8–12 page report in the Learn template. |
 
-The final report and other written project artifacts will be in English. The report template and example are on Learn and must be obtained before report assembly. AI assistance used in code, tests, data, or writing must be declared in the report.
+The instructor grades the last repository commit before the deadline. The final report and other written project artifacts will be in English. The report template and example are on Learn and must be obtained before report assembly. AI assistance used in code, tests, data, or writing must be declared in the report.
 
 ## Main risks and controls
 
