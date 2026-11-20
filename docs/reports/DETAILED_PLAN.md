@@ -7,9 +7,9 @@ This is the execution checklist for the [project plan](PROJECT_PLAN.md). Complet
 - [x] Confirm this plan and the project plan against the course brief and lecture announcements. Use the Learn report template if published.
 - [x] Place the planning documents in the public `bufubro-1/crystal-escape` repository on `main`, then add an English README with the project's purpose, setup, and commands as those commands become available.
 - [x] Write the [one-paragraph testing plan](TESTING_PLAN.md) covering the game scope, unit and browser test levels, tools, and anomaly evaluation approach.
-- [ ] Verify the testing plan was submitted through Learn by 30 October 2026.
+- [x] Submit the testing plan through Learn by 30 October 2026. The project owner confirmed submission on 30 October 2026.
 
-The course brief and Week 6 and Week 9 announcements were reviewed. Week 9 explicitly canceled the Lab 3 project check and confirmed the final deadline and Learn form. Submission by 30 October has no available receipt. The project owner confirmed that no final-report template file was available and will handle the Learn submissions.
+The course brief and Week 6 and Week 9 announcements were reviewed. Week 9 explicitly canceled the Lab 3 project check and confirmed the final deadline and Learn form. The project owner confirmed that no final-report template file was available and will handle the final Learn submission.
 
 **Done when:** The repository contains the agreed planning documents and the plan paragraph is ready for the Learn submission. Use the official report template if it becomes available.
 
