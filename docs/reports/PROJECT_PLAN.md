@@ -33,7 +33,7 @@ Pin dependencies in a lockfile. Document setup, the single test command, and rep
 | 30 October 2026, 23:59 | One-paragraph testing plan submitted on Learn | Scope, tools, and test levels stated in one paragraph. |
 | 11 December 2026, 23:59 | Final repository link and report PDF submitted through the form shared on Learn | At least 20 one-command tests, two levels, two design techniques, AI evaluation, a README verified against the five-minute setup and run target, and an 8–12 page report in the Learn template. |
 
-The instructor grades the last repository commit before the deadline. The final report and other written project artifacts will be in English. The report template and example are on Learn and must be obtained before report assembly. AI assistance used in code, tests, data, or writing must be declared in the report.
+The instructor grades the last repository commit before the deadline. The final report and other written project artifacts are in English. The course brief specifies a Learn template and example. The project owner confirmed no template or example file was available, so the PDF uses a project layout. If an official template becomes available, the report must follow it. AI assistance used in code, tests, data, or writing must be declared in the report.
 
 ## Main risks and controls
 

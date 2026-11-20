@@ -4,7 +4,19 @@
 
 Run `npm ci`, `npx playwright install chromium`, `npm test`, `npm run bot`, and `npm run evaluate`. The measured environment was CachyOS Linux (x86-64), Node.js 26.13.0, npm 12.2.2, Playwright Test 1.64.1, and Chromium 156.0.8078.4 (Playwright revision 1248).
 
-The suite reports 43 Node cases and 13 Chromium cases. Of the 43 Node cases, 28 cover game rules, five cover the bot and telemetry, and ten cover detector behavior. The six winning browser routes cover Quarry, Crossing, Grotto, Ridge, Spring, and Vault.
+The suite reports 43 Node cases and 13 Chromium cases. Of the 43 Node cases, 28 cover game rules, five cover the bot and telemetry, and ten cover detector behavior. The six winning browser routes cover Quarry, Crossing, Grotto, Ridge, Spring, and Vault. Both full suite runs passed. The second ran from a clean public clone of implementation commit `e8a2fea78ea316e990f3515165fd4e6c01b2b87f`.
+
+The clean workflow took 28 seconds on the measured connection, including a shallow public clone, `npm ci` with a fresh npm cache, the Chromium installer with an empty browser cache, starting the game and verifying its HTTP response, all tests, bot generation, and evaluation. Chromium used Playwright's Ubuntu 24.04 x64 fallback build on CachyOS. The two runs produced byte-identical event, summary, and score files.
+
+To repeat the cold-cache measurement, set `npm_config_cache` and `PLAYWRIGHT_BROWSERS_PATH` to separate empty directories before cloning. Start the timer before `git clone --depth 1`. Run the README commands, verify the server response at `http://127.0.0.1:4173`, stop the server, and stop the timer after evaluation exits.
+
+The report PDF is built from [REPORT.md](REPORT.md) with [report.css](report.css). With Pandoc and the installed Chromium available, render it from the repository root.
+
+```sh
+mkdir -p artifacts/report
+pandoc docs/reports/REPORT.md --standalone --embed-resources --css=docs/reports/report.css -o artifacts/report/report.html
+npx playwright pdf --paper-format A4 "file://$PWD/artifacts/report/report.html" docs/reports/Crystal_Escape_Report.pdf
+```
 
 The first sandboxed Playwright run could not bind the localhost port. Running with loopback access exposed the planned browser test failure before the UI script existed. The first bot test incorrectly assumed two particular seeds would always produce different moves. That assertion was revised to check variation across five seeds per map. A detector test also exposed a grid parity constraint during implementation of the synthetic jump. The injection now permits a bounded return jump. These were setup or implementation findings. Synthetic evaluation labels describe constructed trace changes.
 

@@ -1,0 +1,38 @@
+@page {
+  size: A4;
+  margin: 18mm 19mm 19mm;
+  @bottom-left {
+    content: "CMPE 411  /  CRYSTAL ESCAPE";
+    color: #496055;
+    font: 8pt "Liberation Sans", sans-serif;
+    letter-spacing: .07em;
+  }
+  @bottom-right {
+    content: counter(page) " / " counter(pages);
+    color: #496055;
+    font: 8pt "Liberation Sans", sans-serif;
+  }
+}
+
+:root {
+  color: #182921;
+  font: 10.7pt/1.54 "Liberation Sans", Arial, sans-serif;
+  print-color-adjust: exact;
+}
+
+body { margin: 0; }
+h1, h2, h3, p, ul { margin-top: 0; }
+h1, h2 { font-family: "Liberation Serif", Georgia, serif; }
+h1 { font-size: 44pt; line-height: 1; margin: 35mm 0 4mm; color: #164530; }
+h2 { break-before: page; font-size: 25pt; line-height: 1.1; border-bottom: 1pt solid #397456; padding-bottom: 4mm; margin-bottom: 8mm; }
+h3 { font-size: 12pt; margin-bottom: 2mm; margin-top: 5mm; }
+header + p { margin-bottom: 16mm; }
+.subtitle { color: #325a45; font-size: 15pt; margin-bottom: 12mm; }
+header, h3, caption, th { break-after: avoid; }
+p, ul { margin-bottom: 3.7mm; orphans: 3; widows: 3; }
+a { color: #215a40; text-underline-offset: 2pt; }
+code { font: 9.6pt "Liberation Mono", monospace; }
+table { border-collapse: collapse; width: 100%; margin: 5mm 0; font-size: 9.1pt; break-inside: avoid; }
+th, td { padding: 2mm 2.3mm; border-bottom: .55pt solid #cedbd3; vertical-align: top; }
+th { color: #143c28; background: #deece3; text-align: left; }
+tbody tr:nth-child(even) td { background: #f1f6f3; }

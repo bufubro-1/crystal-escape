@@ -35,4 +35,5 @@ The evaluation assigns seeds 1–50 to training, 51–75 to calibration, and 76�
 - [Game requirements](docs/reports/GAME_REQUIREMENTS.md)
 - [Requirements-to-tests matrix and AI-assisted test decisions](docs/reports/TEST_MATRIX.md)
 - [Evaluation method and measured results](docs/reports/EVALUATION.md)
+- [Final report (PDF)](docs/reports/Crystal_Escape_Report.pdf) and [editable report source](docs/reports/REPORT.md)
 - [Project plan](docs/reports/PROJECT_PLAN.md) and [execution checklist](docs/reports/DETAILED_PLAN.md)
